@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "stylelint \"./src/**/*.{css,less,sass,scss}\"",
     "lint:fix": "stylelint \"./src/**/*.{css,less,sass,scss}\" --fix & prettier --write .",
-    "prepare": "husky install"
+    "sass": "sass src/sass/main.scss src/styles/style.css --watch"
   },
   "repository": {
     "type": "git",
