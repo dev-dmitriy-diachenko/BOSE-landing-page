@@ -2,6 +2,10 @@
   height: 100vh;
   background-color: $menu-bakground-color;
 
+  &__container {
+    @extend %container;
+  }
+
   &__content {
     @include on-tablet {
       padding-top: 48px;

@@ -209,6 +209,7 @@ template {
 }
 
 .section__container,
+.menu__container,
 .header__container {
   max-width: 1260px;
   margin: 0 auto;
@@ -216,6 +217,7 @@ template {
 }
 @media screen and (min-width: 744px) {
   .section__container,
+  .menu__container,
   .header__container {
     margin: 0 auto;
     padding: 0 72px;
@@ -223,6 +225,7 @@ template {
 }
 @media screen and (min-width: 1260px) {
   .section__container,
+  .menu__container,
   .header__container {
     margin: 0 auto;
     padding: 0 120px;
