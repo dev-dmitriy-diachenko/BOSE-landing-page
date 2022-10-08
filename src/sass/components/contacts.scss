@@ -1,0 +1,11 @@
+.contacts {
+  @include flex-column(24px);
+
+  min-width: 237px;
+
+  &__title {
+    margin-bottom: 8px;
+    color: #9fadc2;
+    font-size: 14px;
+  }
+}

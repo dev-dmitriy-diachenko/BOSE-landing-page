@@ -1,0 +1,24 @@
+.testimonials {
+  @include on-tablet {
+    max-width: 288px;
+  }
+
+  @include on-desktop {
+    max-width: 411px;
+  }
+
+  @include flex-column(40px);
+
+  &__list {
+    @extend %list-style-reset;
+  }
+
+  &__item {
+    margin-bottom: 16px;
+    font-weight: 700;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

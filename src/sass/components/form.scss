@@ -1,0 +1,31 @@
+.form {
+  @include flex-column(32px);
+
+  max-width: 411px;
+
+  &__inputs {
+    @include flex-column(16px);
+  }
+
+  &__input {
+    height: 46px;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 40px;
+    background-color: $form-input-color;
+
+    &:hover {
+      border: 1px solid $form-input-border-color;
+    }
+
+    &:focus {
+      border: 1px solid #292929;
+    }
+
+    &--message {
+      height: 148px;
+      border-radius: 16px;
+      resize: none;
+    }
+  }
+}

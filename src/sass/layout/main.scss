@@ -1,0 +1,10 @@
+.main {
+  @include on-tablet {
+    gap: 120px;
+  }
+
+  @include flex-column(64px);
+
+  padding-top: 120px;
+  padding-bottom: 100px;
+}

@@ -1,1 +1,1 @@
-# bose-landing-page
+# Bose-landing-page

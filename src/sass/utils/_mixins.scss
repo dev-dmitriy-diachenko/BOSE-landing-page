@@ -1,0 +1,27 @@
+@mixin on-tablet {
+  @media screen and (min-width: 744px) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media screen and (min-width: 1260px) {
+    @content;
+  }
+}
+
+@mixin flex-column($size) {
+  display: flex;
+  flex-direction: column;
+  gap: $size;
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin logo($size) {
+  width: ($size - 8) * 9;
+  height: $size - 8;
+}

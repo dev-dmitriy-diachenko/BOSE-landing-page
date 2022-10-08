@@ -1,0 +1,54 @@
+.page {
+  color: $primary-color;
+  font-family: Inter, sans-serif;
+
+  &__title {
+    @include on-tablet {
+      font-size: 40px;
+    }
+
+    @include on-desktop {
+      font-size: 48px;
+    }
+
+    margin: 0;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 32px;
+    letter-spacing: -1.5px;
+
+    &::before {
+      @extend %background-center;
+
+      @include on-tablet {
+        width: 63px;
+        height: 76px;
+        margin-bottom: 40px;
+      }
+
+      @include on-desktop {
+        margin-bottom: 32px;
+      }
+
+      content: '';
+      display: block;
+      width: 32px;
+      height: 27px;
+      margin-bottom: 16px;
+      background-image: url('../assets/images/sound-waves.svg');
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}

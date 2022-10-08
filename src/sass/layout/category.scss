@@ -1,0 +1,54 @@
+.category {
+  &__images {
+    @include on-tablet {
+      gap: 24px;
+    }
+
+    display: flex;
+    gap: 20px;
+  }
+
+  &__image {
+    @include on-tablet {
+      width: 184px;
+      height: 187px;
+    }
+
+    @include on-desktop {
+      width: 324px;
+      height: 320px;
+    }
+
+    @include square(130px);
+
+    flex-grow: 1;
+    object-fit: cover;
+    object-position: center;
+
+    &--wide {
+      @include on-tablet {
+        width: 392px;
+        height: 187px;
+      }
+
+      @include on-desktop {
+        width: 672px;
+        height: 320px;
+      }
+
+      @include square(130px);
+
+      flex-grow: 2;
+    }
+  }
+
+  &__name {
+    @include on-tablet {
+      font-size: 24px;
+    }
+
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 16px;
+  }
+}

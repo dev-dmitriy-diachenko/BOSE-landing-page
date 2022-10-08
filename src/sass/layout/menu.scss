@@ -1,0 +1,67 @@
+.menu {
+  height: 100vh;
+  background-color: $menu-bakground-color;
+
+  &__content {
+    @include on-tablet {
+      padding-top: 48px;
+    }
+
+    padding-top: 36px;
+  }
+
+  &__inner {
+    @include on-tablet {
+      padding-top: 56px;
+    }
+
+    @include on-desktop {
+      padding-top: 72px;
+    }
+
+    @include flex-column(40px);
+
+    padding-top: 48px;
+  }
+
+  &__list {
+    @include flex-column(24px);
+    @extend %list-style-reset;
+  }
+
+  &__link {
+    display: inline-block;
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &__calls {
+    @include flex-column(16px);
+  }
+
+  &__phone {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  &__call {
+    display: inline-block;
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}

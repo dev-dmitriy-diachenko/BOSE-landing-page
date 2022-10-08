@@ -1,0 +1,28 @@
+.header {
+  @extend %background-center;
+
+  background-image: url('../assets/images/header-background.jpg');
+  color: #fff;
+
+  &__content {
+    @include on-tablet {
+      padding-top: 48px;
+      padding-bottom: 40px;
+    }
+
+    @include on-tablet {
+      padding-bottom: 64px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 36px;
+    padding-bottom: 94px;
+  }
+
+  &__container {
+    @extend %container;
+  }
+}

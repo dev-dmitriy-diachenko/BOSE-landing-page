@@ -1,0 +1,36 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image {
+    @extend %background-center;
+
+    @include on-tablet {
+      width: 392px;
+      height: 387px;
+    }
+
+    @include on-desktop {
+      width: 324px;
+      height: 320px;
+    }
+
+    width: 280px;
+    height: 277px;
+    margin-bottom: 32px;
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  &__category {
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    font-weight: 700;
+  }
+}

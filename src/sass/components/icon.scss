@@ -1,0 +1,41 @@
+.icon {
+  @extend %background-center;
+
+  @include on-tablet {
+    @include square($tablet-icon-size);
+  }
+
+  @include square($mobile-icon-size);
+
+  display: block;
+
+  &--logo {
+    @include on-tablet {
+      @include logo($tablet-icon-size);
+    }
+
+    @include on-desktop {
+      @include logo($desktop-icon-size);
+    }
+
+    @include logo($mobile-icon-size);
+
+    background-image: url('../assets/images/bose.svg');
+  }
+
+  &--phone {
+    background-image: url('../assets/images/icon-phone-call.svg');
+  }
+
+  &--close {
+    background-image: url('../assets/images/icon-close.svg');
+  }
+
+  &--menu {
+    background-image: url('../assets/images/icon-burger-menu.svg');
+
+    &:hover {
+      background-image: url('../assets/images/icon-burger-menu-hover.svg');
+    }
+  }
+}

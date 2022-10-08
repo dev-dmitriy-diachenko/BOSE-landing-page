@@ -1,0 +1,27 @@
+%background-center {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+%list-style-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%container {
+  @include on-tablet {
+    margin: 0 auto;
+    padding: 0 72px;
+  }
+
+  @include on-desktop {
+    margin: 0 auto;
+    padding: 0 120px;
+  }
+
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
