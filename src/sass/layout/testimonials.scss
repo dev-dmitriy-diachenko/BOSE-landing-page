@@ -14,8 +14,20 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
     margin-bottom: 16px;
     font-weight: 700;
+
+    &::before {
+      @include square(8px);
+
+      content: '';
+      display: inline-block;
+      margin-right: 8px;
+      border-radius: 50%;
+      background-color: $primary-color;
+    }
 
     &:last-child {
       margin-bottom: 0;
