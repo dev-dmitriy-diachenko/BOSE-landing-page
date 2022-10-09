@@ -531,6 +531,10 @@ template {
   }
 }
 
+.list__item {
+  margin: 0 auto;
+}
+
 .main {
   display: flex;
   flex-direction: column;
