@@ -677,6 +677,10 @@ template {
   font-family: Inter, sans-serif;
 }
 
+.page__body--with-menu {
+  overflow: hidden;
+}
+
 .page__title {
   margin: 0;
   font-weight: 800;

@@ -2,6 +2,12 @@
   color: $primary-color;
   font-family: Inter, sans-serif;
 
+  &__body {
+    &--with-menu {
+      overflow: hidden;
+    }
+  }
+
   &__title {
     @include on-tablet {
       font-size: 40px;
