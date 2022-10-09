@@ -9,4 +9,8 @@
   }
 
   @include flex-column(48px);
+
+  &__item {
+    margin: 0 auto;
+  }
 }
