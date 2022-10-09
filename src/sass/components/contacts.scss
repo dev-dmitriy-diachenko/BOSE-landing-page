@@ -8,4 +8,9 @@
     color: #9fadc2;
     font-size: 14px;
   }
+
+  &__link {
+    color: $primary-color;
+    text-decoration: none;
+  }
 }

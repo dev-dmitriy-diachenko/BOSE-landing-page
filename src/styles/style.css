@@ -275,6 +275,11 @@ template {
   font-size: 14px;
 }
 
+.contacts__link {
+  color: #292929;
+  text-decoration: none;
+}
+
 .form {
   display: flex;
   flex-direction: column;
