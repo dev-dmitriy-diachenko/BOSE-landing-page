@@ -24,9 +24,10 @@
 
       content: '';
       display: inline-block;
+      box-sizing: border-box;
       margin-right: 8px;
+      border: 3px solid $menu-bakground-color;
       border-radius: 50%;
-      background-color: $primary-color;
     }
 
     &:last-child {
